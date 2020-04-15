@@ -54,6 +54,7 @@ FROM employees e
 	ON (e.emp_no = m.emp_no)
 		JOIN departments AS d
     	ON (d.dept_no = m.dept_no)
+	WHERE d.dept_name = 'Sales'
 
 
 List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
